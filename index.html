@@ -200,6 +200,7 @@ footer { border-top: 1px solid var(--border); padding: 2rem 0; }
   <a href="#experiencias" onclick="closeMenu()">Experiências</a>
   <a href="#habilidades" onclick="closeMenu()">Habilidades</a>
   <a href="#formacao" onclick="closeMenu()">Formação</a>
+  <a href="#projetos" onclick="closeMenu()">Projetos</a>
   <a href="#contato" onclick="closeMenu()">Contato</a>
   <button class="btn-p" onclick="downloadCV();closeMenu()" style="margin-top:0.5rem">Baixar CV</button>
 </div>
@@ -338,6 +339,63 @@ footer { border-top: 1px solid var(--border); padding: 2rem 0; }
   </div>
 </section>
 
+
+<section class="section" id="projetos">
+  <div class="container">
+    <div class="s-tag">Projetos</div>
+    <div class="s-title fade-up">O que eu construí</div>
+    <div class="fade-up" style="max-width:780px">
+      <div style="background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden">
+        <div style="padding:1.75rem 2rem;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+          <div>
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:0.5rem">
+              <span style="font-family:var(--fh);font-size:1.2rem;font-weight:700;color:var(--text)">Serena</span>
+              <span style="font-size:0.7rem;font-weight:600;color:#10b981;background:rgba(16,185,129,0.1);border:1px solid rgba(16,185,129,0.2);padding:2px 10px;border-radius:100px">Em produção</span>
+            </div>
+            <p style="font-size:0.95rem;color:#9ca3af;line-height:1.7;max-width:520px">CRM completo para psicólogas brasileiras — substitui cadernos e planilhas por agenda inteligente, prontuário digital e cobranças via PIX. Produto em produção com planos Gratuito, Pro (R$59/mês) e Clínica (R$149/mês). Desenvolvido do zero com Claude Code.</p>
+          </div>
+          <a href="https://serena-app-livid.vercel.app" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:var(--accent);color:#fff;border:none;padding:0.6rem 1.2rem;border-radius:8px;font-size:0.85rem;font-weight:500;text-decoration:none;white-space:nowrap;transition:all 0.2s;flex-shrink:0">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            Ver projeto
+          </a>
+        </div>
+        <div style="padding:1.5rem 2rem;border-bottom:1px solid var(--border)">
+          <div style="font-size:0.7rem;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.9rem">Funcionalidades</div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem">
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Agenda online</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Prontuário digital</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Cobranças via PIX</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Relatórios financeiros</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Lembretes WhatsApp</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">Área do paciente</span>
+            <span style="background:rgba(255,255,255,0.05);color:#d1d5db;font-size:0.78rem;padding:0.28rem 0.75rem;border-radius:5px;border:1px solid var(--border)">LGPD compliant</span>
+          </div>
+        </div>
+        <div style="padding:1.5rem 2rem">
+          <div style="font-size:0.7rem;font-weight:600;color:#6b7280;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:0.9rem">Stack</div>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem">
+            <div style="background:rgba(59,130,246,0.07);border:1px solid rgba(59,130,246,0.15);border-radius:8px;padding:0.6rem 0.9rem">
+              <div style="font-size:0.7rem;color:#3b82f6;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px">Frontend</div>
+              <div style="font-size:0.82rem;color:#d1d5db">Next.js 15 · React 19 · TypeScript · Tailwind</div>
+            </div>
+            <div style="background:rgba(16,185,129,0.07);border:1px solid rgba(16,185,129,0.15);border-radius:8px;padding:0.6rem 0.9rem">
+              <div style="font-size:0.7rem;color:#10b981;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px">Backend</div>
+              <div style="font-size:0.82rem;color:#d1d5db">Next.js Server Actions · Supabase Auth</div>
+            </div>
+            <div style="background:rgba(139,92,246,0.07);border:1px solid rgba(139,92,246,0.15);border-radius:8px;padding:0.6rem 0.9rem">
+              <div style="font-size:0.7rem;color:#8b5cf6;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px">Banco de dados</div>
+              <div style="font-size:0.82rem;color:#d1d5db">Supabase · PostgreSQL · RLS</div>
+            </div>
+            <div style="background:rgba(245,158,11,0.07);border:1px solid rgba(245,158,11,0.15);border-radius:8px;padding:0.6rem 0.9rem">
+              <div style="font-size:0.7rem;color:#f59e0b;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:3px">Deploy</div>
+              <div style="font-size:0.82rem;color:#d1d5db">Vercel · PWA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="section alt" id="contato">
   <div class="container">
     <div class="s-tag">Vamos conversar</div>
